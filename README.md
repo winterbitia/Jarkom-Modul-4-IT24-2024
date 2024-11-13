@@ -28,6 +28,8 @@
 ## Pendahuluan
 
 ## Topologi
+Topologi GNS3 CIDR
+![](assets/topo-gns3.png)
 
 ## Routing Table
 
