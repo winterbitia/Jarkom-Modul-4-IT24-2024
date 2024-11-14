@@ -11,6 +11,8 @@
   - [Daftar Isi](#daftar-isi)
   - [Pendahuluan](#pendahuluan)
   - [Topologi](#topologi)
+      - [Topologi GNS3 CIDR](#topologi-gns3-cidr)
+      - [Topologi CPT VLSM](#topologi-cpt-vlsm)
   - [Routing Table](#routing-table)
   - [Subnetting GNS - Metode CIDR](#subnetting-gns---metode-cidr)
     - [Penggabungan IP](#penggabungan-ip)
@@ -29,7 +31,10 @@
 
 ## Topologi
 #### Topologi GNS3 CIDR
-![](assets/topo-gns3.png)
+![GNS3](assets/topo-gns3.png)
+
+#### Topologi CPT VLSM
+![CPT](assets/topo-cpt.png)
 
 ## Routing Table
 
