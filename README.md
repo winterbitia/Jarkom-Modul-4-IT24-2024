@@ -23,8 +23,30 @@
   - [Subnetting Cisco Packet Tracer - Metode VLSM](#subnetting-cisco-packet-tracer---metode-vlsm)
     - [Tree VLSM](#tree-vlsm)
     - [Pembagian IP](#pembagian-ip-1)
-    - [Konfigurasi](#konfigurasi)
-    - [Routing](#routing-1)
+    - [Konfigurasi Subnetting](#konfigurasi-subnetting)
+      - [Subnet A1](#subnet-a1)
+      - [Subnet A2](#subnet-a2)
+      - [Subnet A3](#subnet-a3)
+      - [Subnet A4](#subnet-a4)
+      - [Subnet A5](#subnet-a5)
+      - [Subnet A6](#subnet-a6)
+      - [Subnet A7](#subnet-a7)
+      - [Subnet A8](#subnet-a8)
+      - [Subnet A9](#subnet-a9)
+      - [Subnet A10](#subnet-a10)
+      - [Subnet A11](#subnet-a11)
+      - [Subnet A12](#subnet-a12)
+      - [Subnet A13](#subnet-a13)
+      - [Subnet A14](#subnet-a14)
+      - [Subnet A15](#subnet-a15)
+      - [Subnet A16](#subnet-a16)
+      - [Subnet A17](#subnet-a17)
+      - [Subnet A18](#subnet-a18)
+      - [Subnet A19](#subnet-a19)
+      - [Subnet A20](#subnet-a20)
+      - [Subnet A21](#subnet-a21)
+      - [Subnet A22](#subnet-a22)
+    - [Konfigurasi Routing](#konfigurasi-routing)
     - [Testing](#testing-1)
 
 ## Pendahuluan
@@ -113,8 +135,519 @@ A20 | 192.245.19.48 | 255.255.255.248 | 192.245.19.55 | 192.245.19.49 - 192.245.
 A21 | 192.245.19.56 | 255.255.255.248 | 192.245.19.63 | 192.245.19.57 - 192.245.19.62
 A22 | 192.245.18.128 | 255.255.255.192 | 192.245.18.191 | 192.245.18.129 - 192.245.18.190
 
-### Konfigurasi
+### Konfigurasi Subnetting
 
-### Routing
+#### Subnet A1
+
+**Hololive (Router)**
+```
+interface fa0/1
+ip address 192.245.19.73 255.255.255.252
+no shutdown
+```
+
+**Holo-ID (Router)**
+```
+interface fa0/0
+ip address 192.245.19.74 255.255.255.252
+no shutdown
+```
+
+#### Subnet A2
+
+**Holo-ID (Router)**
+```
+interface fa0/1
+ip address 192.245.19.93 255.255.255.252
+no shutdown
+```
+
+**AREA15 (Router)**
+```
+interface fa0/0
+ip address 192.245.19.94 255.255.255.252
+no shutdown
+```
+
+#### Subnet A3
+
+**AREA15 (Router)**
+```
+interface fa0/1
+ip address 192.245.8.1 255.255.252.0
+no shutdown
+```
+
+**Moona (Device)**
+```
+Interface fa0
+IP Address: 192.245.8.2
+Subnet Mask: 255.255.252.0
+Gateway: 192.245.8.1
+```
+
+**Risu (Device)**
+```
+Interface fa0
+IP Address: 192.245.8.3
+Subnet Mask: 255.255.252.0
+Gateway: 192.245.8.1
+```
+**lofi (Device)**
+```
+Interface fa0
+IP Address: 192.245.8.4
+Subnet Mask: 255.255.252.0
+Gateway: 192.245.8.1
+```
+
+#### Subnet A4
+
+**Holo-ID (Router)**
+```
+interface fa1/0
+ip address 192.245.19.97 255.255.255.252
+no shutdown
+```
+
+**holoro (Router)**
+```
+interface fa0/0
+ip address 192.245.19.98 255.255.255.252
+no shutdown
+```
+
+#### Subnet A5
+
+**holoro (Router)**
+```
+interface fa0/1
+ip address 192.245.18.193 255.255.255.192
+no shutdown
+```
+
+**Ollie (Device)**
+```
+Interface fa0
+IP Address: 192.245.18.194
+Subnet Mask: 255.255.255.192
+Gateway: 192.245.18.193
+```
+
+**Anya (Device)**
+```
+Interface fa0
+IP Address: 192.245.18.195
+Subnet Mask: 255.255.255.192
+Gateway: 192.245.18.193
+```
+**Reine (Device)**
+```
+Interface fa0
+IP Address: 192.245.18.196
+Subnet Mask: 255.255.255.192
+Gateway: 192.245.18.193
+```
+
+#### Subnet A6
+
+**Holo-ID (Router)**
+```
+interface fa1/1
+ip address 192.245.19.101 255.255.255.252
+no shutdown
+```
+
+**holoh3ro (Router)**
+```
+interface fa0/0
+ip address 192.245.19.102 255.255.255.252
+no shutdown
+```
+
+#### Subnet A7
+
+**holoh3ro (Router)**
+```
+interface fa0/1
+ip address 192.245.16.1 255.255.254.0
+no shutdown
+```
+
+**Zeta (Device)**
+```
+Interface fa0
+IP Address: 192.245.16.2
+Subnet Mask: 255.255.254.0
+Gateway: 192.245.16.1
+```
+
+**Kaela (Device)**
+```
+Interface fa0
+IP Address: 192.245.16.3
+Subnet Mask: 255.255.254.0
+Gateway: 192.245.16.1
+```
+
+**Kobo (Device)**
+```
+Interface fa0
+IP Address: 192.245.16.4
+Subnet Mask: 255.255.254.0
+Gateway: 192.245.16.1
+```
+
+#### Subnet A8
+
+**Hololive (Router)**
+```
+interface fa1/0
+ip address 192.245.19.105 255.255.255.252
+no shutdown
+```
+
+**HoloJP (Router)**
+```
+interface fa0/1
+ip address 192.245.19.106 255.255.255.252
+no shutdown
+```
+
+#### Subnet A9
+
+**HoloJP (Router)**
+```
+interface fa0/0
+ip address 192.245.19.65 255.255.255.248
+no shutdown
+```
+
+**DEV_IS (Router)**
+```
+interface fa0/0
+ip address 192.245.19.66 255.255.255.248
+no shutdown
+```
+
+**GEN:0 (Router)**
+```
+interface fa0/0
+ip address 192.245.19.67 255.255.255.248
+no shutdown
+```
+
+#### Subnet A10
+
+**DEV_IS (Router)**
+```
+interface fa0/1
+ip address 192.245.19.33 255.255.255.240
+no shutdown
+```
+
+**Ririka_Rade (Device)**
+```
+Interface fa0
+IP Address: 192.245.19.34
+Subnet Mask: 255.255.255.240
+Gateway: 192.245.19.33
+```
+
+**Ao (Device)**
+```
+Interface fa0
+IP Address: 192.245.19.35
+Subnet Mask: 255.255.255.240
+Gateway: 192.245.19.33
+```
+
+**Hajime_Kanade (Device)**
+```
+Interface fa0
+IP Address: 192.245.19.36
+Subnet Mask: 255.255.255.240
+Gateway: 192.245.19.33
+```
+
+#### Subnet A11
+
+**GEN:0 (Router)**
+```
+interface fa0/1
+ip address 192.245.0.1 255.255.248.0
+no shutdown
+```
+
+**GEN:1 (Router)**
+```
+interface fa0/0
+ip address 192.245.0.2 255.255.248.0
+no shutdown
+```
+
+**MiComet (Device)**
+```
+Interface fa0
+IP Address: 192.245.0.3
+Subnet Mask: 255.255.248.0
+Gateway: 192.245.0.1
+```
+
+**Sora_Robo_AZK (Device)**
+```
+Interface fa0
+IP Address: 192.245.0.4
+Subnet Mask: 255.255.248.0
+Gateway: 192.245.0.1
+```
+
+
+#### Subnet A12
+
+**GEN:1 (Router)**
+```
+interface fa0/1
+ip address 192.245.14.1 255.255.254.0
+no shutdown
+```
+
+**FBK_Matsuri (Device)**
+```
+Interface fa0
+IP Address: 192.245.14.2
+Subnet Mask: 255.255.254.0
+Gateway: 192.245.14.1
+```
+
+**Aki_Hachama (Device)**
+```
+Interface fa0
+IP Address: 192.245.14.2
+Subnet Mask: 255.255.254.0
+Gateway: 192.245.14.1
+```
+
+#### Subnet A13
+
+**GEN:1 (Router)**
+```
+interface fa1/0
+ip address 192.245.19.77 255.255.255.252
+no shutdown
+```
+
+**GAMERS (Router)**
+```
+interface fa0/0
+ip address 192.245.19.78 255.255.255.252
+no shutdown
+```
+
+#### Subnet A14
+
+**GAMERS (Router)**
+```
+interface fa0/1
+ip address 192.245.18.1 255.255.255.128
+no shutdown
+```
+
+**Kerone (Device)**
+```
+Interface fa0
+IP Address: 192.245.18.2
+Subnet Mask: 255.255.255.128
+Gateway: 192.245.18.1
+```
+
+**Okayu (Device)**
+```
+Interface fa0
+IP Address: 192.245.18.3
+Subnet Mask: 255.255.255.128
+Gateway: 192.245.18.1
+```
+
+**Mio (Device)**
+```
+Interface fa0
+IP Address: 192.245.18.4
+Subnet Mask: 255.255.255.128
+Gateway: 192.245.18.1
+```
+
+#### Subnet A15
+
+**Hololive (Router)**
+```
+interface fa1/1
+ip address 192.245.19.81 255.255.255.252
+no shutdown
+```
+
+**HoloEN (Router)**
+```
+interface fa0/0
+ip address 192.245.19.82 255.255.255.252
+no shutdown
+```
+
+#### Subnet A16
+
+**HoloEN (Router)**
+```
+interface fa0/1
+ip address 192.245.19.85 255.255.255.252
+no shutdown
+```
+
+**HoloAdvent (Router)**
+```
+interface fa0/0
+ip address 192.245.19.86 255.255.255.252
+no shutdown
+```
+
+#### Subnet A17
+
+**HoloAdvent (Router)**
+```
+interface fa0/1
+ip address 192.245.19.1 255.255.255.224
+no shutdown
+```
+
+**FuwaMoco (Device)**
+```
+Interface fa0
+IP Address: 192.245.19.2
+Subnet Mask: 255.255.224.0
+Gateway: 192.245.19.1
+```
+
+**Shiori_Nerissa (Device)**
+```
+Interface fa0
+IP Address: 192.245.19.3
+Subnet Mask: 255.255.224.0
+Gateway: 192.245.19.1
+```
+
+**Biboo (Device)**
+```
+Interface fa0
+IP Address: 192.245.19.4
+Subnet Mask: 255.255.224.0
+Gateway: 192.245.19.1
+```
+
+#### Subnet A18
+
+**HoloEN (Router)**
+```
+interface fa1/0
+ip address 192.245.19.89 255.255.255.252
+no shutdown
+```
+
+**Holo-Myth (Router)**
+```
+interface fa0/0
+ip address 192.245.19.90 255.255.255.252
+no shutdown
+```
+
+#### Subnet A19
+
+**Holo-Myth (Router)**
+```
+interface fa0/1
+ip address 192.245.12.1 255.255.254.0
+no shutdown
+```
+
+**Gura_Ame_Ina (Device)**
+```
+Interface fa0
+IP Address: 192.245.12.2
+Subnet Mask: 255.255.254.0
+Gateway: 192.245.12.1
+```
+
+**Kiara_Calli (Device)**
+```
+Interface fa0
+IP Address: 192.245.12.3
+Subnet Mask: 255.255.254.0
+Gateway: 192.245.12.1
+```
+
+#### Subnet A20
+
+**Holo-Myth (Router)**
+```
+interface fa1/0
+ip address 192.245.19.49 255.255.255.248
+no shutdown
+```
+
+**Project-Hope (Router)**
+```
+interface fa0/0
+ip address 192.245.19.50 255.255.255.248
+no shutdown
+```
+
+**Holo-Council (Router)**
+```
+interface fa0/0
+ip address 192.245.19.51 255.255.255.248
+no shutdown
+```
+
+#### Subnet A21
+
+**Project-Hope (Router)**
+```
+interface fa0/1
+ip address 192.245.19.57 255.255.255.248
+no shutdown
+```
+
+**Irys (Device)**
+```
+Interface fa0
+IP Address: 192.245.19.58
+Subnet Mask: 255.255.255.248
+Gateway: 192.245.19.57
+```
+
+#### Subnet A22
+
+**Holo-Council (Router)**
+```
+interface fa0/1
+ip address 192.245.18.129 255.255.255.192
+no shutdown
+```
+
+**Kronii_Mumei (Device)**
+```
+Interface fa0
+IP Address: 192.245.18.130
+Subnet Mask: 255.255.255.192
+Gateway: 192.245.18.129
+```
+
+**Bae_Fauna (Device)**
+```
+Interface fa0
+IP Address: 192.245.18.131
+Subnet Mask: 255.255.255.192
+Gateway: 192.245.18.129
+```
+
+### Konfigurasi Routing
 
 ### Testing
