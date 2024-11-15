@@ -53,7 +53,7 @@
 
 ## Topologi
 #### Topologi GNS3 CIDR
-![GNS3](assets/topo-gns.png)
+![GNS3](assets/topo-gns.jpg)
 
 #### Topologi CPT VLSM
 ![CPT](assets/topo-cpt.png)
