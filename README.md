@@ -832,6 +832,7 @@ do write
 enable
 configure terminal
 ip route 0.0.0.0 0.0.0.0 192.245.19.65
+ip route 192.245.0.0 255.255.248.0 192.245.19.67
 do write
 ```
 
