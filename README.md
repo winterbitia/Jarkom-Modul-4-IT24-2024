@@ -192,8 +192,6 @@ no shutdown
 
 **Moona (Device)**
 ```
-enable
-configure terminal
 Interface fa0
 IP Address: 192.245.8.2
 Subnet Mask: 255.255.252.0
