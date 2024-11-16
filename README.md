@@ -68,6 +68,8 @@
         - [Project-Hope](#project-hope)
         - [Holo-Council](#holo-council)
     - [Testing](#testing-1)
+      - [Device to Device](#device-to-device)
+      - [Router to Router](#router-to-router)
 
 ## Pendahuluan
 
@@ -945,3 +947,11 @@ do write
 
 
 ### Testing
+
+Testing dilakukan dengan send packet antara 3 ujung dari topologi (HoloID, HoloJP, dan HoloEN)
+
+#### Device to Device
+![Device to Device](assets/vlsm-dev2dev.png)
+
+#### Router to Router
+![Router to Router](assets/vlsm-rou2rou.png)
