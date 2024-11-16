@@ -423,7 +423,7 @@ Gateway: 192.245.14.1
 **Aki_Hachama (Device)**
 ```
 Interface fa0
-IP Address: 192.245.14.2
+IP Address: 192.245.14.3
 Subnet Mask: 255.255.254.0
 Gateway: 192.245.14.1
 ```
