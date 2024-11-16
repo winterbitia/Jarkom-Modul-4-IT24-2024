@@ -48,7 +48,25 @@
       - [Subnet A22](#subnet-a22)
     - [Konfigurasi Routing](#konfigurasi-routing)
       - [Sisi Kanan (Holo-ID)](#sisi-kanan-holo-id)
+        - [Hololive](#hololive)
         - [Holo-ID](#holo-id)
+        - [AREA15](#area15)
+        - [holoro](#holoro)
+        - [holoh3ro](#holoh3ro)
+      - [Sisi Bawah (HoloJP)](#sisi-bawah-holojp)
+        - [Hololive](#hololive-1)
+        - [HoloJP](#holojp)
+        - [DEV\_IS](#dev_is)
+        - [GEN:0](#gen0)
+        - [GEN:1](#gen1)
+        - [GAMERS](#gamers)
+      - [Sisi Kiri (HoloEN)](#sisi-kiri-holoen)
+        - [Hololive](#hololive-2)
+        - [HoloEN](#holoen)
+        - [HoloAdvent](#holoadvent)
+        - [Holo-Myth](#holo-myth)
+        - [Project-Hope](#project-hope)
+        - [Holo-Council](#holo-council)
     - [Testing](#testing-1)
 
 ## Pendahuluan
@@ -726,6 +744,198 @@ Gateway: 192.245.18.129
 
 #### Sisi Kanan (Holo-ID)
 
+##### Hololive
+
+```
+enable
+configure terminal
+ip route 192.245.19.92 255.255.255.252 192.245.19.74
+ip route 192.245.8.0 255.255.252.0 192.245.19.74
+ip route 192.245.19.96 255.255.255.252 192.245.19.74
+ip route 192.245.18.192 255.255.255.192 192.245.19.74
+ip route 192.245.19.100 255.255.255.252 192.245.19.74
+ip route 192.245.16.0 255.255.254.0 192.245.19.74
+do write
+```
+
 ##### Holo-ID
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.145.19.73
+ip route 192.245.8.0 255.255.252.0 192.245.19.94
+ip route 192.245.18.192 255.255.255.192 192.245.19.98
+ip route 192.245.16.0 255.255.254.0 192.245.19.102
+do write
+```
+
+##### AREA15
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.145.19.93
+do write
+```
+
+##### holoro
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.145.19.97
+do write
+```
+##### holoh3ro
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.145.19.101
+do write
+```
+
+#### Sisi Bawah (HoloJP)
+
+##### Hololive
+
+```
+enable
+configure terminal
+ip route 192.245.19.64 255.255.255.248 192.245.19.106
+ip route 192.245.19.32 255.255.255.240 192.245.19.106
+ip route 192.245.0.0 255.255.248.0 192.245.19.106
+ip route 192.245.14.0 255.255.254.0 192.245.19.106
+ip route 192.245.19.76 255.255.255.252 192.245.19.106
+ip route 192.245.18.0 255.255.255.128 192.245.19.106
+do write
+```
+
+##### HoloJP
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.19.105
+ip route 192.245.19.32 255.255.255.240 192.245.19.66
+ip route 192.245.0.0 255.255.248.0 192.245.19.67
+ip route 192.245.14.0 255.255.254.0 192.245.19.67
+ip route 192.245.19.76 255.255.255.252 192.245.19.67
+ip route 192.245.18.0 255.255.255.128 192.245.19.67
+do write
+```
+
+##### DEV_IS
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.19.65
+do write
+```
+
+##### GEN:0
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.19.65
+ip route 192.245.19.32 255.255.255.240 192.245.19.66
+ip route 192.245.14.0 255.255.254.0 192.245.0.2
+ip route 192.245.19.76 255.255.255.252 192.245.0.2
+ip route 192.245.18.0 255.255.255.128 192.245.0.2
+do write
+```
+
+##### GEN:1
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.0.1
+ip route 192.245.18.0 255.255.255.128 192.245.19.78
+do write
+```
+
+##### GAMERS
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.19.77
+do write
+```
+
+
+#### Sisi Kiri (HoloEN)
+
+##### Hololive
+
+```
+enable
+configure terminal
+ip route 192.245.19.84 255.255.255.252 192.245.19.82
+ip route 192.245.19.0 255.255.255.224 192.245.19.82
+ip route 192.245.19.88 255.255.255.252 192.245.19.82
+ip route 192.245.12.0 255.255.254.0 192.245.19.82
+ip route 192.245.19.48 255.255.255.248 192.245.19.82
+ip route 192.245.19.56 255.255.255.248 192.245.19.82
+ip route 192.245.18.128 255.255.255.192 192.245.19.82
+do write
+```
+
+##### HoloEN
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.19.81
+ip route 192.245.19.0 255.255.255.224 192.245.19.86
+ip route 192.245.12.0 255.255.254.0 192.245.19.90
+ip route 192.245.19.48 255.255.255.248 192.245.19.90
+ip route 192.245.19.56 255.255.255.248 192.245.19.90
+ip route 192.245.18.128 255.255.255.192 192.245.19.90
+do write
+```
+
+##### HoloAdvent
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.19.85
+do write
+```
+
+##### Holo-Myth
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.19.89
+ip route 192.245.19.56 255.255.255.248 192.245.19.50
+ip route 192.245.18.128 255.255.255.192 192.245.19.51
+do write
+```
+
+##### Project-Hope
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.19.49
+do write
+```
+
+##### Holo-Council
+
+```
+enable
+configure terminal
+ip route 0.0.0.0 0.0.0.0 192.245.19.49
+do write
+```
+
 
 ### Testing
