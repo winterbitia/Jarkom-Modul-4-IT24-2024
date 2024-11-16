@@ -775,7 +775,7 @@ do write
 ```
 enable
 configure terminal
-ip route 0.0.0.0 0.0.0.0 192.145.19.93
+ip route 0.0.0.0 0.0.0.0 192.245.19.93
 do write
 ```
 
@@ -784,7 +784,7 @@ do write
 ```
 enable
 configure terminal
-ip route 0.0.0.0 0.0.0.0 192.145.19.97
+ip route 0.0.0.0 0.0.0.0 192.245.19.97
 do write
 ```
 ##### holoh3ro
@@ -792,7 +792,7 @@ do write
 ```
 enable
 configure terminal
-ip route 0.0.0.0 0.0.0.0 192.145.19.101
+ip route 0.0.0.0 0.0.0.0 192.245.19.101
 do write
 ```
 
