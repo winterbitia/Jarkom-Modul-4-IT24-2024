@@ -47,6 +47,8 @@
       - [Subnet A21](#subnet-a21)
       - [Subnet A22](#subnet-a22)
     - [Konfigurasi Routing](#konfigurasi-routing)
+      - [Sisi Kanan (Holo-ID)](#sisi-kanan-holo-id)
+        - [Holo-ID](#holo-id)
     - [Testing](#testing-1)
 
 ## Pendahuluan
@@ -141,6 +143,8 @@ A22 | 192.245.18.128 | 255.255.255.192 | 192.245.18.191 | 192.245.18.129 - 192.2
 
 **Hololive (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.19.73 255.255.255.252
 no shutdown
@@ -148,6 +152,8 @@ no shutdown
 
 **Holo-ID (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.74 255.255.255.252
 no shutdown
@@ -157,6 +163,8 @@ no shutdown
 
 **Holo-ID (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.19.93 255.255.255.252
 no shutdown
@@ -164,6 +172,8 @@ no shutdown
 
 **AREA15 (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.94 255.255.255.252
 no shutdown
@@ -173,6 +183,8 @@ no shutdown
 
 **AREA15 (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.8.1 255.255.252.0
 no shutdown
@@ -180,6 +192,8 @@ no shutdown
 
 **Moona (Device)**
 ```
+enable
+configure terminal
 Interface fa0
 IP Address: 192.245.8.2
 Subnet Mask: 255.255.252.0
@@ -205,6 +219,8 @@ Gateway: 192.245.8.1
 
 **Holo-ID (Router)**
 ```
+enable
+configure terminal
 interface fa1/0
 ip address 192.245.19.97 255.255.255.252
 no shutdown
@@ -212,6 +228,8 @@ no shutdown
 
 **holoro (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.98 255.255.255.252
 no shutdown
@@ -221,6 +239,8 @@ no shutdown
 
 **holoro (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.18.193 255.255.255.192
 no shutdown
@@ -253,6 +273,8 @@ Gateway: 192.245.18.193
 
 **Holo-ID (Router)**
 ```
+enable
+configure terminal
 interface fa1/1
 ip address 192.245.19.101 255.255.255.252
 no shutdown
@@ -260,6 +282,8 @@ no shutdown
 
 **holoh3ro (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.102 255.255.255.252
 no shutdown
@@ -269,6 +293,8 @@ no shutdown
 
 **holoh3ro (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.16.1 255.255.254.0
 no shutdown
@@ -302,6 +328,8 @@ Gateway: 192.245.16.1
 
 **Hololive (Router)**
 ```
+enable
+configure terminal
 interface fa1/0
 ip address 192.245.19.105 255.255.255.252
 no shutdown
@@ -309,6 +337,8 @@ no shutdown
 
 **HoloJP (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.19.106 255.255.255.252
 no shutdown
@@ -318,6 +348,8 @@ no shutdown
 
 **HoloJP (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.65 255.255.255.248
 no shutdown
@@ -325,6 +357,8 @@ no shutdown
 
 **DEV_IS (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.66 255.255.255.248
 no shutdown
@@ -332,6 +366,8 @@ no shutdown
 
 **GEN:0 (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.67 255.255.255.248
 no shutdown
@@ -341,6 +377,8 @@ no shutdown
 
 **DEV_IS (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.19.33 255.255.255.240
 no shutdown
@@ -374,6 +412,8 @@ Gateway: 192.245.19.33
 
 **GEN:0 (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.0.1 255.255.248.0
 no shutdown
@@ -381,6 +421,8 @@ no shutdown
 
 **GEN:1 (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.0.2 255.255.248.0
 no shutdown
@@ -407,6 +449,8 @@ Gateway: 192.245.0.1
 
 **GEN:1 (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.14.1 255.255.254.0
 no shutdown
@@ -432,6 +476,8 @@ Gateway: 192.245.14.1
 
 **GEN:1 (Router)**
 ```
+enable
+configure terminal
 interface fa1/0
 ip address 192.245.19.77 255.255.255.252
 no shutdown
@@ -439,6 +485,8 @@ no shutdown
 
 **GAMERS (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.78 255.255.255.252
 no shutdown
@@ -448,6 +496,8 @@ no shutdown
 
 **GAMERS (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.18.1 255.255.255.128
 no shutdown
@@ -481,6 +531,8 @@ Gateway: 192.245.18.1
 
 **Hololive (Router)**
 ```
+enable
+configure terminal
 interface fa1/1
 ip address 192.245.19.81 255.255.255.252
 no shutdown
@@ -488,6 +540,8 @@ no shutdown
 
 **HoloEN (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.82 255.255.255.252
 no shutdown
@@ -497,6 +551,8 @@ no shutdown
 
 **HoloEN (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.19.85 255.255.255.252
 no shutdown
@@ -504,6 +560,8 @@ no shutdown
 
 **HoloAdvent (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.86 255.255.255.252
 no shutdown
@@ -513,6 +571,8 @@ no shutdown
 
 **HoloAdvent (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.19.1 255.255.255.224
 no shutdown
@@ -546,6 +606,8 @@ Gateway: 192.245.19.1
 
 **HoloEN (Router)**
 ```
+enable
+configure terminal
 interface fa1/0
 ip address 192.245.19.89 255.255.255.252
 no shutdown
@@ -553,6 +615,8 @@ no shutdown
 
 **Holo-Myth (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.90 255.255.255.252
 no shutdown
@@ -562,6 +626,8 @@ no shutdown
 
 **Holo-Myth (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.12.1 255.255.254.0
 no shutdown
@@ -587,6 +653,8 @@ Gateway: 192.245.12.1
 
 **Holo-Myth (Router)**
 ```
+enable
+configure terminal
 interface fa1/0
 ip address 192.245.19.49 255.255.255.248
 no shutdown
@@ -594,6 +662,8 @@ no shutdown
 
 **Project-Hope (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.50 255.255.255.248
 no shutdown
@@ -601,6 +671,8 @@ no shutdown
 
 **Holo-Council (Router)**
 ```
+enable
+configure terminal
 interface fa0/0
 ip address 192.245.19.51 255.255.255.248
 no shutdown
@@ -610,6 +682,8 @@ no shutdown
 
 **Project-Hope (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.19.57 255.255.255.248
 no shutdown
@@ -627,6 +701,8 @@ Gateway: 192.245.19.57
 
 **Holo-Council (Router)**
 ```
+enable
+configure terminal
 interface fa0/1
 ip address 192.245.18.129 255.255.255.192
 no shutdown
@@ -649,5 +725,9 @@ Gateway: 192.245.18.129
 ```
 
 ### Konfigurasi Routing
+
+#### Sisi Kanan (Holo-ID)
+
+##### Holo-ID
 
 ### Testing
