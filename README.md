@@ -142,7 +142,7 @@
 ![GNS3](assets/langkah10.png)
 ![GNS3](assets/10.png)
 ### Tree CIDR
-
+![GNS3](assets/subnetting_tree.png)
 ### Pembagian IP
 
 ### Routing
