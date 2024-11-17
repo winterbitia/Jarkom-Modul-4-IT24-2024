@@ -111,43 +111,43 @@
 ## Subnetting GNS - Metode CIDR
 
 ### Penggabungan IP
-1.
+1. Penggabungan I (B)
 ![GNS3](assets/langkah1.png)
 ![GNS3](assets/1.png)
 
-2.
+2. Penggabungan II (C)
 ![GNS3](assets/langkah2.png)
 ![GNS3](assets/2.png)
 
-3.
+3. Penggabungan III (D)
 ![GNS3](assets/langkah3.png)
 ![GNS3](assets/3.png)
 
-4.
+4. Penggabungan IV (E)
 ![GNS3](assets/langkah4.png)
 ![GNS3](assets/4.png)
 
-5.
+5. Penggabungan V (F)
 ![GNS3](assets/langkah5.png)
 ![GNS3](assets/5.png)
 
-6.
+6. Penggabungan VI (G)
 ![GNS3](assets/langkah6.png)
 ![GNS3](assets/6.png)
 
-7.
+7. Penggabungan VII (H)
 ![GNS3](assets/langkah7.png)
 ![GNS3](assets/7.png)
 
-8.
+8. Penggabungan VIII (I)
 ![GNS3](assets/langkah8.png)
 ![GNS3](assets/8.png)
 
-9.
+9. Penggabungan IX (J)
 ![GNS3](assets/langkah9.png)
 ![GNS3](assets/9.png)
 
-10.
+10. Penggabungan X (K)
 ![GNS3](assets/langkah10.png)
 ![GNS3](assets/10.png)
 ### Tree CIDR
