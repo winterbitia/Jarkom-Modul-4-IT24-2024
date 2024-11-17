@@ -111,6 +111,7 @@
 ## Subnetting GNS - Metode CIDR
 
 ### Penggabungan IP
+1.
 ![GNS3](assets/langkah1.png)
 ![GNS3](assets/1.png)
 ### Tree CIDR
