@@ -114,6 +114,33 @@
 1.
 ![GNS3](assets/langkah1.png)
 ![GNS3](assets/1.png)
+2.
+![GNS3](assets/langkah2.png)
+![GNS3](assets/2.png)
+3.
+![GNS3](assets/langkah3.png)
+![GNS3](assets/3.png)
+4.
+![GNS3](assets/langkah4.png)
+![GNS3](assets/4.png)
+5.
+![GNS3](assets/langkah5.png)
+![GNS3](assets/5.png)
+6.
+![GNS3](assets/langkah6.png)
+![GNS3](assets/6.png)
+7.
+![GNS3](assets/langkah7.png)
+![GNS3](assets/7.png)
+8.
+![GNS3](assets/langkah8.png)
+![GNS3](assets/8.png)
+9.
+![GNS3](assets/langkah9.png)
+![GNS3](assets/9.png)
+10.
+![GNS3](assets/langkah10.png)
+![GNS3](assets/10.png)
 ### Tree CIDR
 
 ### Pembagian IP
