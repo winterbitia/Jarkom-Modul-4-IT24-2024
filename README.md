@@ -177,7 +177,269 @@ A19 |	192.245.128.0 |	255.255.254.0 |	192.245.129.255 |	192.245.128.1 - 192.245.
 A20 |	192.245.130.128 |	255.255.255.248 |	192.245.130.135 |	192.245.130.129 - 192.245.130.134
 A21 |	192.245.130.64 |	255.255.255.248 |	192.245.130.71 |	192.245.130.65 - 192.245.130.70
 A22 |	192.245.130.0 |	255.255.255.192 |	192.245.130.63 |	192.245.130.1 - 192.245.130.62
-### Konfigurasi Subnetting
+### Konfigurasi Network
+- **Hololive (Gateway)**
+```
+#A1
+auto eth2
+iface eth2 inet static
+    address 192.246.16.1
+    netmask 255.255.255.252
+
+#A8
+auto eth3
+iface eth3 inet static
+    address 192.245.64.1
+    netmask 255.255.255.252
+
+#A15
+auto eth1
+iface eth1 inet static
+    address 192.245.10.1
+    netmask 255.255.255.252
+```
+
+- **Holo-ID (Gateway)**
+```
+#A1
+auto eth0
+iface eth0 inet static
+    address 192.246.16.2
+    netmask 255.255.255.252
+
+#A2
+auto eth1
+iface eth1 inet static
+    address 192.246.12.1
+    netmask 255.255.255.252
+
+#A4
+auto eth2
+iface eth2 inet static
+    address 192.246.4.65
+    netmask 255.255.255.252
+
+#A6
+auto eth3
+iface eth3 inet static
+    address 192.246.2.1
+    netmask 255.255.255.252
+```
+
+- **AREA15 (Gateway)**
+```
+#A2
+auto eth0
+iface eth0 inet static
+    address 192.246.12.2
+    netmask 255.255.255.252
+
+#A3
+auto eth1
+iface eth1 inet static
+    address 192.246.8.1
+    netmask 255.255.252.0
+```
+
+- **holoro (Gateway)**
+```
+#A4
+auto eth0
+iface eth0 inet static
+    address 192.246.4.66
+    netmask 255.255.255.252
+
+#A5
+auto eth1
+iface eth1 inet static
+    address 192.246.4.1
+    netmask 255.255.255.192
+```
+
+- **holo3ro (Gateway)**
+```
+#A6
+auto eth0
+iface eth0 inet static
+    address 192.246.2.2
+    netmask 255.255.255.252
+
+#A7
+auto eth1
+iface eth1 inet static
+    address 192.246.0.1
+    netmask 255.255.254.0
+
+```
+
+- **Holo-EN (Gateway)**
+```
+#A15
+auto eth0
+iface eth0 inet static
+    address 192.245.10.2
+    netmask 255.255.255.252
+
+#A16
+auto eth2
+iface eth2 inet static
+    address 192.245.136.32
+    netmask 255.255.255.252
+
+#A18
+auto eth1
+iface eth1 inet static
+    address 192.245.132.1
+    netmask 255.255.255.252
+```
+
+- **HoloAdvent (Gateway)**
+```
+#A16
+auto eth0
+iface eth0 inet static
+    address 192.245.136.33
+    netmask 255.255.255.252
+
+#A17
+auto eth0
+iface eth0 inet static
+    address 192.245.136.1
+    netmask 255.255.255.224
+```
+
+- **Holo-Myth (Gateway)**
+```
+#A18
+auto eth0
+iface eth0 inet static
+    address 192.245.132.2
+    netmask 255.255.255.252
+
+#A19
+auto eth1
+iface eth1 inet static
+    address 192.245.128.1
+    netmask 255.255.254.0
+
+#A20
+auto eth2
+iface eth2 inet static
+    address 192.245.130.129
+    netmask 255.255.255.248
+```
+
+- **Project-Hope (Gateway)**
+```
+#A20
+auto eth1
+iface eth1 inet static
+    address 192.245.130.130
+    netmask 255.255.255.248
+
+#A21
+auto eth0
+iface eth0 inet static
+    address 192.245.130.65
+    netmask 255.255.255.248
+```
+
+- **Holo-Council (Gateway)**
+```
+#A20
+auto eth0
+iface eth0 inet static
+    address 192.245.130.131
+    netmask 255.255.255.248
+
+#A22
+auto eth1
+iface eth1 inet static
+    address 192.245.130.1
+    netmask 255.255.255.192
+```
+
+- **Holo-JP (Gateway)**
+```
+#A8
+auto eth0
+iface eth0 inet static
+    address 192.245.64.2
+    netmask 255.255.255.252
+
+#A9
+auto eth1
+iface eth1 inet static
+    address 192.245.32.1
+    netmask 255.255.255.248
+```
+
+- **DEV_IS (Gateway)**
+```
+#A9
+auto eth0
+iface eth0 inet static
+    address 192.245.32.2
+    netmask 255.255.255.248
+
+#A10
+auto eth1
+iface eth1 inet static
+    address 192.245.16.1
+    netmask 255.255.255.240
+```
+
+- **GEN:0 (Gateway)**
+```
+#A9
+auto eth0
+iface eth0 inet static
+    address 192.245.32.3
+    netmask 255.255.255.248
+
+#A11
+auto eth1
+iface eth1 inet static
+    address 192.245.0.1
+    netmask 255.255.248.0
+```
+
+- **GEN:1 (Gateway)**
+```
+#A11
+auto eth0
+iface eth0 inet static
+    address 192.245.0.2
+    netmask 255.255.248.0
+
+#A12
+auto eth1
+iface eth1 inet static
+    address 192.245.8.1
+    netmask 255.255.254.0
+
+#A13
+auto eth2
+iface eth2 inet static
+    address 192.245.10.129
+    netmask 255.255.255.252
+```
+
+- **GAMERS (Gateway)**
+```
+#A13
+auto eth0
+iface eth0 inet static
+    address 192.245.10.130
+    netmask 255.255.255.252
+
+#A14
+auto eth1
+iface eth1 inet static
+    address 192.245.10.1
+    netmask 255.255.255.128
+```
+
 #### Subnet A1
 **Hololive (Router)**
 ```
