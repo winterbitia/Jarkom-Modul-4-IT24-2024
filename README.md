@@ -193,7 +193,7 @@ iface eth0 inet static
     address 192.246.16.2
     netmask 255.255.255.252
 ```
-
+---
 #### Subnet A2
 **Holo-ID (Router)**
 ```
@@ -209,6 +209,7 @@ iface eth0 inet static
     address 192.246.12.2
     netmask 255.255.255.252
 ```
+---
 #### Subnet A3
 **AREA15 (Router)**
 ```
@@ -241,7 +242,7 @@ iface eth0 inet static
     netmask 255.255.252.0
     gateway 192.246.8.1
 ```
-
+---
 #### Subnet A4
 **Holo-ID (Router)**
 ```
@@ -257,7 +258,7 @@ iface eth0 inet static
     address 192.246.4.66
     netmask 255.255.255.252
 ```
-
+---
 #### Subnet A5
 **holoro (Router)**
 ```
@@ -290,7 +291,7 @@ iface eth0 inet static
     netmask 255.255.255.192
     gateway 192.246.4.1
 ```
-
+---
 #### Subnet A6
 **Holo-ID (Router)**
 ```
@@ -306,7 +307,7 @@ iface eth0 inet static
     address 192.246.2.2
     netmask 255.255.255.252
 ```
-
+---
 #### Subnet A7
 **holoh3ro (Router)**
 ```
@@ -339,7 +340,7 @@ iface eth0 inet static
     netmask 255.255.254.0
     gateway 192.246.0.1
 ```
-
+---
 #### Subnet A8
 **Hololive (Router)**
 ```
@@ -355,7 +356,7 @@ iface eth0 inet static
     address 192.245.64.2
     netmask 255.255.255.252
 ```
-
+---
 #### Subnet A9
 **Holo-JP (Router)**
 ```
@@ -378,7 +379,7 @@ iface eth0 inet static
     address 192.245.32.3
     netmask 255.255.255.248
 ```
-
+---
 #### Subnet A10
 **DEV_IS (Router)**
 ```
@@ -411,6 +412,7 @@ iface eth0 inet static
     netmask 255.255.255.240
     gateway 192.245.16.1
 ```
+---
 #### Subnet A11
 **GEN:0 (Router)**
 ```
@@ -442,7 +444,7 @@ iface eth0 inet static
     netmask 255.255.248.0
     gateway 192.245.0.1
 ```
-
+---
 #### Subnet A12
 **GEN:1 (Router)**
 ```
@@ -467,7 +469,7 @@ iface eth1 inet static
     netmask 255.255.254.0
     gateway 192.245.8.1
 ```
-
+---
 #### Subnet A13
 **GEN:1 (Router)**
 ```
@@ -483,7 +485,7 @@ iface eth0 inet static
     address 192.245.10.130
     netmask 255.255.255.252
 ```
-
+---
 #### Subnet A14
 **GAMERS (Router)**
 ```
@@ -516,6 +518,7 @@ iface eth0 inet static
     netmask 255.255.255.128
     gateway 192.245.10.1
 ```
+---
 #### Subnet A15
 **Hololive (Router)**
 ```
@@ -531,7 +534,7 @@ iface eth0 inet static
     address 192.245.10.2
     netmask 255.255.255.252
 ```
-
+---
 #### Subnet A16
 **Holo-EN (Router)**
 ```
@@ -547,7 +550,7 @@ iface eth0 inet static
     address 192.245.136.33
     netmask 255.255.255.252
 ```
-
+---
 #### Subnet A17
 **HoloAdvent (Router)**
 ```
@@ -580,7 +583,7 @@ iface eth0 inet static
     netmask 255.255.255.224
     gateway 192.245.136.1
 ```
-
+---
 #### Subnet A18
 **Holo-EN (Router)**
 ```
@@ -596,7 +599,7 @@ iface eth0 inet static
     address 192.245.132.2
     netmask 255.255.255.252
 ```
-
+---
 #### Subnet A19
 **Holo-Myth (Router)**
 ```
@@ -621,7 +624,7 @@ iface eth0 inet static
     netmask 255.255.254.0
     gateway 192.245.128.1
 ```
-
+---
 #### Subnet A20
 **Holo-Myth (Router)**
 ```
@@ -644,7 +647,7 @@ iface eth0 inet static
     address 192.245.130.131
     netmask 255.255.255.248
 ```
-
+---
 #### Subnet A21
 **Project-Hope (Router)**
 ```
@@ -661,7 +664,7 @@ iface eth0 inet static
     netmask 255.255.255.248
     gateway 192.245.130.65
 ```
-
+---
 #### Subnet A22
 **Holo-Council (Router)**
 ```
@@ -686,7 +689,7 @@ iface eth0 inet static
     netmask 255.255.255.248
     gateway 192.245.130.1
 ```
-
+---
 ### Testing
 
 ## Subnetting Cisco Packet Tracer - Metode VLSM
