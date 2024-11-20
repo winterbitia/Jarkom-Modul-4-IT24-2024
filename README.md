@@ -178,9 +178,47 @@ A20 |	192.245.130.128 |	255.255.255.248 |	192.245.130.135 |	192.245.130.129 - 19
 A21 |	192.245.130.64 |	255.255.255.248 |	192.245.130.71 |	192.245.130.65 - 192.245.130.70
 A22 |	192.245.130.0 |	255.255.255.192 |	192.245.130.63 |	192.245.130.1 - 192.245.130.62
 ### Konfigurasi Subnetting
+#### Subnet A1
+**Hololive (Router)**
+```
+auto eth2
+iface eth2 inet static
+    address 192.246.16.1
+    netmask 255.255.255.252
+```
+**Holo-ID (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.16.2
+    netmask 255.255.255.252
+```
+
+#### Subnet A2
+**Holo-ID (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.246.12.1
+    netmask 255.255.255.252
+```
+**AREA15 (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.12.2
+    netmask 255.255.255.252
+```
+#### Subnet A3
+**AREA15 (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.246.8.1
+    netmask 255.255.252.0
+```
 **Risu (Client)**
 ```
-#A3
 auto eth0
 iface eth0 inet static
     address 192.246.8.2
@@ -189,7 +227,6 @@ iface eth0 inet static
 ```
 **Moona (Client)**
 ```
-#A3
 auto eth0
 iface eth0 inet static
     address 192.246.8.3
@@ -198,12 +235,456 @@ iface eth0 inet static
 ```
 **Iofi (Client)**
 ```
-#A3
 auto eth0
 iface eth0 inet static
     address 192.246.8.4
     netmask 255.255.252.0
     gateway 192.246.8.1
+```
+
+#### Subnet A4
+**Holo-ID (Router)**
+```
+auto eth2
+iface eth2 inet static
+    address 192.246.4.65
+    netmask 255.255.255.252
+```
+**holoro (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.4.66
+    netmask 255.255.255.252
+```
+
+#### Subnet A5
+**holoro (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.246.4.1
+    netmask 255.255.255.192
+```
+**Ollie (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.4.2
+    netmask 255.255.255.192
+    gateway 192.246.4.1
+```
+**Anya (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.4.3
+    netmask 255.255.255.192
+    gateway 192.246.4.1
+```
+**Reine (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.4.4
+    netmask 255.255.255.192
+    gateway 192.246.4.1
+```
+
+#### Subnet A6
+**Holo-ID (Router)**
+```
+auto eth3
+iface eth3 inet static
+    address 192.246.2.1
+    netmask 255.255.255.252
+```
+**holoh3ro (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.2.2
+    netmask 255.255.255.252
+```
+
+#### Subnet A7
+**holoh3ro (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.246.0.1
+    netmask 255.255.254.0
+```
+**Zeta (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.0.2
+    netmask 255.255.254.0
+    gateway 192.246.0.1
+```
+**Kaela (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.0.3
+    netmask 255.255.254.0
+    gateway 192.246.0.1
+```
+**Kobo (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.246.0.4
+    netmask 255.255.254.0
+    gateway 192.246.0.1
+```
+
+#### Subnet A8
+**Hololive (Router)**
+```
+auto eth3
+iface eth3 inet static
+    address 192.245.64.1
+    netmask 255.255.255.252
+```
+**Holo-JP (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.64.2
+    netmask 255.255.255.252
+```
+
+#### Subnet A9
+**Holo-JP (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.32.1
+    netmask 255.255.255.248
+```
+**DEV_IS (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.32.2
+    netmask 255.255.255.248
+```
+**GEN:0 (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.32.3
+    netmask 255.255.255.248
+```
+
+#### Subnet A10
+**DEV_IS (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.16.1
+    netmask 255.255.255.240
+```
+**Ririka_Raden (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.16.2
+    netmask 255.255.255.240
+    gateway 192.245.16.1
+```
+**Ao (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.16.3
+    netmask 255.255.255.240
+    gateway 192.245.16.1
+```
+**Hajime_Kanade (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.16.4
+    netmask 255.255.255.240
+    gateway 192.245.16.1
+```
+#### Subnet A11
+**GEN:0 (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.0.1
+    netmask 255.255.248.0
+```
+**GEN:1 (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.0.2
+    netmask 255.255.248.0
+```
+**MiComet (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.0.3
+    netmask 255.255.248.0
+    gateway 192.245.0.1
+```
+**Sora_Robo_AZKI (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.0.4
+    netmask 255.255.248.0
+    gateway 192.245.0.1
+```
+
+#### Subnet A12
+**GEN:1 (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.8.1
+    netmask 255.255.254.0
+```
+**FBK_Matsuri (Client)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.8.2
+    netmask 255.255.254.0
+    gateway 192.245.8.1
+```
+**Aki_Hachama (Client)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.8.3
+    netmask 255.255.254.0
+    gateway 192.245.8.1
+```
+
+#### Subnet A13
+**GEN:1 (Router)**
+```
+auto eth2
+iface eth2 inet static
+    address 192.245.10.129
+    netmask 255.255.255.252
+```
+**GAMERS (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.10.130
+    netmask 255.255.255.252
+```
+
+#### Subnet A14
+**GAMERS (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.10.1
+    netmask 255.255.255.128
+```
+**Korone (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.10.2
+    netmask 255.255.255.128
+    gateway 192.245.10.1
+```
+**Okayu (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.8.3
+    netmask 255.255.255.128
+    gateway 192.245.10.1
+```
+**Mio (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.8.4
+    netmask 255.255.255.128
+    gateway 192.245.10.1
+```
+#### Subnet A15
+**Hololive (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.10.1
+    netmask 255.255.255.252
+```
+**Holo-EN (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.10.2
+    netmask 255.255.255.252
+```
+
+#### Subnet A16
+**Holo-EN (Router)**
+```
+auto eth2
+iface eth2 inet static
+    address 192.245.136.32
+    netmask 255.255.255.252
+```
+**HoloAdvent (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.136.33
+    netmask 255.255.255.252
+```
+
+#### Subnet A17
+**HoloAdvent (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.136.1
+    netmask 255.255.255.224
+```
+**FuwaMoco (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.136.2
+    netmask 255.255.255.224
+    gateway 192.245.136.1
+```
+**Shiori_Nerissa (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.136.3
+    netmask 255.255.255.224
+    gateway 192.245.136.1
+```
+**Biboo (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.136.4
+    netmask 255.255.255.224
+    gateway 192.245.136.1
+```
+
+#### Subnet A18
+**Holo-EN (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.132.1
+    netmask 255.255.255.252
+```
+**Holo-Myth (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.132.2
+    netmask 255.255.255.252
+```
+
+#### Subnet A19
+**Holo-Myth (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.128.1
+    netmask 255.255.254.0
+```
+**Gura_Ame_Ina (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.128.2
+    netmask 255.255.254.0
+    gateway 192.245.128.1
+```
+**Kiara_Calli (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.128.3
+    netmask 255.255.254.0
+    gateway 192.245.128.1
+```
+
+#### Subnet A20
+**Holo-Myth (Router)**
+```
+auto eth2
+iface eth2 inet static
+    address 192.245.130.129
+    netmask 255.255.255.248
+```
+**Project-Hope (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.130.130
+    netmask 255.255.255.248
+```
+**Holo-Council (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.130.131
+    netmask 255.255.255.248
+```
+
+#### Subnet A21
+**Project-Hope (Router)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.130.65
+    netmask 255.255.255.248
+```
+**Irys (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.130.66
+    netmask 255.255.255.248
+    gateway 192.245.130.65
+```
+
+#### Subnet A22
+**Holo-Council (Router)**
+```
+auto eth1
+iface eth1 inet static
+    address 192.245.130.1
+    netmask 255.255.255.192
+```
+**Kronii_Mumei (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.130.2
+    netmask 255.255.255.248
+    gateway 192.245.130.1
+```
+**Bae_Fauna (Client)**
+```
+auto eth0
+iface eth0 inet static
+    address 192.245.130.3
+    netmask 255.255.255.248
+    gateway 192.245.130.1
 ```
 
 ### Testing
@@ -246,7 +727,6 @@ A21 | 192.245.19.56 | 255.255.255.248 | 192.245.19.63 | 192.245.19.57 - 192.245.
 A22 | 192.245.18.128 | 255.255.255.192 | 192.245.18.191 | 192.245.18.129 - 192.245.18.190
 
 ### Konfigurasi Subnetting
-#### Subnet A3
 
 #### Subnet A1
 
