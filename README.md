@@ -439,6 +439,8 @@ iface eth1 inet static
     address 192.245.10.1
     netmask 255.255.255.128
 ```
+---
+### Konfigurasi Network
 
 #### Subnet A1
 **Hololive (Router)**
