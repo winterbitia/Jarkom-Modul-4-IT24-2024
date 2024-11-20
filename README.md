@@ -46,7 +46,7 @@
       - [Subnet A20](#subnet-a20)
       - [Subnet A21](#subnet-a21)
       - [Subnet A22](#subnet-a22)
-    - [Konfigurasi Routing](#konfigurasi-routing)
+    - [Konfigurasi ](#konfigurasi-)
       - [Sisi Kanan (Holo-ID)](#sisi-kanan-holo-id)
         - [Hololive](#hololive)
         - [Holo-ID](#holo-id)
@@ -954,6 +954,26 @@ iface eth0 inet static
     gateway 192.245.130.1
 ```
 ---
+
+### Konfigurasi Routing
+#### Holo-ID (Kanan)
+#### Holo-EN (Kiri)
+```
+#A17
+post-up route add -net 192.245.136.0 netmask 255.255.255.224 gw
+
+#A19
+post-up route add -net 192.245.128.0 netmask 255.255.254.0 gw
+
+#A20
+post-up route add -net 192.245.130.128 netmask 255.255.255.248 gw
+
+#A21
+post-up route add -net 192.245.130.64 netmask 255.255.255.248 gw
+
+#A22
+post-up route add -net 192.245.130.0 netmask 255.255.255.192 gw
+```
 ### Testing
 
 ## Subnetting Cisco Packet Tracer - Metode VLSM
